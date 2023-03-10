@@ -56,15 +56,6 @@
   --shadow-6: 0px 2px 8px rgba(40, 41, 61, 0.08),
     0px 20px 32px rgba(96, 97, 112, 0.24);
 }
-
-body {
-  font-family: var(--font-family);
-  color: var(--black);
-  font-size: 16px;
-}
-html {
-  scroll-behavior: smooth;
-}
 @media (max-width: 991px) {
   body {
     font-size: 14px;
@@ -186,15 +177,36 @@ p {
   background-size: cover;
   background-position: center;
 }
-/* .header-area {
-  background-image: url(https://img.freepik.com/free-photo/full-shot-man-working-roof-with-hammer_23-2149343667.jpg?w=1380&t=st=1678357576~exp=1678358176~hmac=43a6f0d7b4a55887f52ca6098fef01cf971603bb213beb3cd038c5600728b438) !important;
-  background-image: url(../img/roofs/roofs1.jpg) !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-} */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e4e4e4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(2, 0, 138, 0.90) !important;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 0, 138, 1) !important;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--black);
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .slider {
   overflow: hidden;
