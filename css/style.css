@@ -1121,11 +1121,6 @@ p {
   display: inline-flex;
   align-items: center;
 }
-@media (max-width: 767px) {
-  .header-eight {
-    margin-top: 20px;
-  }
-}
 .header-eight .video-button .text {
   display: inline-block;
   margin-left: 15px;
