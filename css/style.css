@@ -543,7 +543,16 @@ html {
 .mb-100 {
   margin-bottom: 100px;
 }
-
+.dropdown-item:hover{
+  background-color: var(--primary);
+  color: white;
+}
+.dropdown-item:hover .dropdown-item{
+  color: white !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
 /*===== NAVBAR NINE =====*/
 .navbar-area.navbar-nine {
   /* background: var(--primary); */
@@ -876,6 +885,34 @@ html {
     right: 60px;
     top: 7px;
   }
+  .contactUs {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-eight .header-content p, .header-eight .header-content h4 {
+    width: 100% !important;
+    text-align: center;
+  }
+  .header-eight .header-content h1 {
+    justify-content: center;
+    text-align: center;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .about-five-content .about-five-tab .tab-content p:last-child {
+    text-align: center;
+  }
+  .contact-section .contact-item-wrapper .contact-item .contact-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-section .contact-item-wrapper .contact-item .contact-content{
+    text-align: center;
+  }
+  .navbar-toggler{
+    background-color: white;
+  }
 }
 .navbar-area.navbar-nine .navbar .navbar-btn .menu-bar {
   font-size: 20px;
@@ -1095,6 +1132,7 @@ html {
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
   font-family: sans-serif;
+  display: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight .header-content h1  {
@@ -1114,6 +1152,7 @@ html {
 .header-eight .header-content p {
   color: var(--white);
   opacity: 0.9;
+  display: none;
 }
 .header-eight .button {
   margin-top: 40px;
@@ -1143,7 +1182,31 @@ html {
   background: var(--white);
   color: var(--primary);
 }
-
+.socialIcons a {
+  width: 43px;
+  height: 43px;
+  background-color: white;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialIcons a:hover {
+  background-color: var(--primary);
+}
+.socialIcons a:hover i {
+  color: white !important;
+}
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+.whatsapp:hover {
+  background-image: linear-gradient(rgb(95, 252, 123), rgb(40, 209, 70));
+}
 /*===========================
   about-05 css
 ===========================*/
@@ -1424,7 +1487,7 @@ html {
 
 /* Request Free */
 .requestfree{
-  background-image: url(../img/roofs/requestFree.webp);
+  background-image: url(https://drive.google.com/uc?export=view&id=1YXfh2DPQplgvaQSU3lwm78hwktR7Nr2z);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -2378,6 +2441,7 @@ html {
 }
 .contact-form-wrapper .section-title h2 {
   margin-bottom: 10px;
+  display: none;
 }
 .contact-form-wrapper .section-title p {
   color: var(--dark-3);
