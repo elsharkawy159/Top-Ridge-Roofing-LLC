@@ -40,7 +40,7 @@ function sendData() {
         var mainLogo = document.querySelector(".mainLogo");
         var nav_item = document.querySelectorAll(".nav-item a")
         var menu_bar = document.querySelector(".menu-bar") 
-        if (scrollY >= 850) {
+        if (scrollY >= 550) {
             header_navbar.classList.add("bg");
             header_navbar.classList.add("shadow");
             mainLogo.classList.add("bg-dark")
