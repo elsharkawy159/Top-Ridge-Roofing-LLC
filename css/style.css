@@ -872,7 +872,7 @@ html {
   }
   .socialIcons {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -886,11 +886,17 @@ html {
     background-color: currentcolor;
     border-radius: 10px;
     padding: 10px;
-  }
-    .carousel-control-next,
-    .carousel-control-prev {
-      width: 10% !important;
+}
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 10% !important;
     }
+  .section-title-five h6{
+    font-size: 55px;
+  }
+  .section-title-five h6 {
+    font-size: 55px;
+  }
 }
 /* CSS */
 .button-92 {
