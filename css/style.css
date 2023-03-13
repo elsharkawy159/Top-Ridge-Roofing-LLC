@@ -591,6 +591,7 @@ html {
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-area.navbar-nine .navbar .navbar-nav {
     margin-right: 0;
+    background-color: currentColor;
   }
 }
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item {
