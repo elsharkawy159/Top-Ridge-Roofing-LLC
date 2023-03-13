@@ -5,14 +5,14 @@ var phoneInput = document.querySelector("#phone");
 var subjInput = document.querySelector("#subj");
 var messageInput = document.querySelector("#message");
 var sendMsg = document.querySelector(".sendMsg");
-
+var navbar_toggler = document.querySelector(".navbar-toggler");
+var showCollapsebar = document.querySelector(".show")
 
 function sendData() {
     if (nameInput.value == "" || emailInput.value == "" || phoneInput.value == "" || subjInput.value == "") {
         document.querySelector(".fillForm").classList.remove("d-none");
     } else {
         document.querySelector(".fillForm").classList.add("d-none");
-
             emailjs.send("service_29zq25s","template_0pan34o",{
             from_name: "New User",
             to_name: "Top Ridge Roofing LLC",
@@ -40,11 +40,16 @@ function sendData() {
         var mainLogo = document.querySelector(".mainLogo");
         var nav_item = document.querySelectorAll(".nav-item a")
         var menu_bar = document.querySelector(".menu-bar") 
+        var menu_bar = document.querySelector(".menu-bar")
+
         if (scrollY >= 550) {
             header_navbar.classList.add("bg");
             header_navbar.classList.add("shadow");
             mainLogo.classList.add("bg-dark")
             menu_bar.classList.add("text-dark")
+            $(showCollapsebar).css("background-color","white")
+            $(".navbar-collapse").addClass("bg-white")
+            $(".mainLogo").attr("width","60")
             for (let i = 0; i < nav_item.length; i++) {
                 nav_item[i].classList.add("text-dark")
                 
@@ -54,7 +59,10 @@ function sendData() {
             header_navbar.classList.remove("shadow");
             mainLogo.classList.remove("bg-dark")
             menu_bar.classList.remove("text-dark")
-                        for (let i = 0; i < nav_item.length; i++) {
+            $(".mainLogo").attr("width","90")
+            $(showCollapsebar).removeAttr("style")
+            $(".navbar-collapse").removeClass("bg-white")
+                for (let i = 0; i < nav_item.length; i++) {
                 nav_item[i].classList.remove("text-dark")
                 
             }
