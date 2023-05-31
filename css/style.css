@@ -211,7 +211,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.w-fit {
+  width: fit-content;
+}
 .slider {
   overflow: hidden;
   width: 100%;
@@ -293,6 +295,9 @@ html {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .col-md-4 {
+    padding: 0;
   }
 }
 
